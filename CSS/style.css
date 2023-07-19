@@ -1,0 +1,141 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-image: url('../RESOURCES/main-background.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+header{
+    /* position: absolute; */
+    position: fixed; 
+    z-index: 1;
+    width: 100%;
+}
+ul{
+  list-style: none;
+}
+/* CSS */
+#navbar {
+    /* Set the initial background color of the navbar to transparent */
+    background-color: transparent;
+    /* Add other styles for the navbar */
+  }
+  
+  #navbar.scrolled {
+    /* Set the background color of the navbar to white when it has the 'scrolled' class */
+    background-color: white;
+  }
+  #navbar.scrolled li{
+    color: black;
+  }
+  
+.home-hero{
+    height: 530px;
+    width: 100%;
+    background-image: url('../RESOURCES/bg-hero.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+   
+}
+.features{
+   background-color: #f1f1f1;
+   margin-top: 80px;
+}
+.features2{
+    width: 800px;
+    min-width: 300px;
+    display: inline-block;
+    margin-right: 50px;
+}
+
+.media-scroller {
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-columns: content;
+    overflow-x: auto;
+    margin: 40px 10px;
+    overflow-y: hidden;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.media-scroller::-webkit-scrollbar {
+    display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.media-scroller {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
+
+.scroll-items{
+    width: 280px;
+    height: 360px;
+    background-color: #09225a;
+    border-right: 1px solid white;
+    margin-bottom: 140px;
+}
+.scroll-items p{
+    display: none;
+    font-size: large;
+    font-weight: lighter;
+}
+.scroll-items h5{
+    display: none;
+}
+.scroll-items:hover p{
+    display: block;
+  }
+  .scroll-items:hover h5{
+    display: block;
+  }
+.scroll-items:hover{
+    background: linear-gradient(to right bottom,#1272bc,#0088cb,#009dd6,#00b2df,#24c7e6);
+    height: 500px;
+    margin-bottom: 0;
+}
+.productsandplatforms{
+    width: 250px;
+    height: 340px;
+}
+.productsandplatforms:hover{
+    box-shadow: 20px 20px 50px grey;
+
+}
+.scroll-image{
+    filter: grayscale(100%);
+  -webkit-filter: grayscale(100%); /* For Safari 6.0 - 9.0 */
+}
+
+.scroll-image:hover{
+    filter: none;
+  -webkit-filter: none;
+}
+.formContainer{
+    background-image: url("../RESOURCES/formImg.jpg");
+    width: 100vw;
+    min-height: 250px;
+    background-repeat: no-repeat;
+  background-size: cover;
+}
+.inputTransperent{
+    opacity: 0.4;
+
+    background-color: rgba(0, 0, 0, 0.678);
+}
+footer{
+  background-color: #09225a;
+  color: white;
+}
+.footer-list li{
+  margin: 20px 0;
+}
+
+@media only screen and (max-width: 600px) {
+  .footer-list li{
+    display: inline-block;
+    margin: 5px 7px;
+  }
+}
